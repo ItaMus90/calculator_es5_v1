@@ -1,0 +1,82 @@
+/* Variables */
+:root {
+
+    --white: #f3f3f3;
+    --grey: #171717;
+    --dark_light: #c4c4c4;
+    --dark_light2: #313131;
+    --btn_action: #ffce00;
+    --btn_operator: #706acc;
+}
+
+/* Style */
+
+body {
+    margin: 0;
+    background: var(--white);
+}
+
+.app {
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.calc {
+
+    width: 380px;
+
+}
+
+.calc-display {
+
+    background: var(--dark_light);
+    padding: 0px 15px;
+    height: 60px;
+    text-align: right;
+    color: var(--dark_light2);
+    border-radius: 16px 16px 0px 0px;
+    line-height: 60px;
+
+}
+
+.calc-actions {
+
+    background: var(--grey);
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0px 0px 16px 16px;
+    padding: 15px 0px;
+}
+
+.calc-actions button {
+
+    width: calc((100% / 3) - 30px);
+    height: 35px;
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+    margin: 5px 15px;
+
+}
+
+.calc-actions button.action{ 
+
+    background: var(--btn_action);
+
+}
+.calc-actions button.operator{ 
+
+    background: var(--btn_operator);
+
+}
+
+.calc-actions button.blank{ 
+
+    opacity: 0;
+
+}
